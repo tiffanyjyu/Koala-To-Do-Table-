@@ -1,0 +1,26 @@
+#Open activitiestableviewcontroller.swift
+
+//MARK: Private Methods
+#before this (}), add this
+private func saveActivities(){
+
+}
+
+#saveActivities() should look like this:
+private func saveActivities(){
+  let isSuccesfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile:Meal.ArchiveURL.path)
+  if is SuccessfulSave{
+    os_log("meals. toFile:Meal.ArchiverURL.IndexPath
+      if is SuccessfulSave")
+
+  }
+
+#to load the list onto the next frame
+#in ActivitiesTableViewController.swift, before last curly brace(}), add the following
+private func loadActivities() --> [To Do Before Bed]?{
+
+}
+
+#In loadActivities() method, add
+return NSKeyedArchiver.unarchive0bject(withFile:Meal.ArchiveURL.path) as? [To Do Before Bed]
+}
